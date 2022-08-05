@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>CodePen - Demo FlexBox 3</title>
+		<style>
+			body {
+				padding: 2em;
+			}
+
+			.headerContainer {
+				display: flex;
+				flex-flow: column wrap;
+				align-content: center;
+				background-color: tomato;
+				font-weight: bold;
+				padding: 10px;
+			}
+
+			.footerContainer {
+				display: flex;
+				flex-flow: column wrap;
+				align-content: center;
+				background: lightgreen;
+				font-weight: bold;
+				padding: 10px;
+			}
+
+			.mainContainer {
+				display: flex;
+				flex-flow: row wrap;
+				font-weight: bold;
+				text-align: center;
+			}
+
+			.mainContentItem {
+				text-align: left;
+				background: deepskyblue;
+				flex: 3 0px;
+				order: 2;
+			}
+
+			article {
+				padding: 10px;
+				margin: 10px;
+				background: aqua;
+
+			}
+
+			.sideBarLeftItem {
+				background: gold;
+				order: 1;
+			}
+
+			.sideBarRightItem {
+				background: hotpink;
+				order: 3;
+			}
+
+			.sideBarItem {
+				flex: 1 0 0;
+				border: 0px solid green;
+			}
+            .mainContentItem { flex: 3 0px;}
+            .sideBarLeftItem { order: 1;}
+            .mainContentItem { order: 2;}
+            .sideBarRightItem { order: 3;}
+
+		</style>
+	</head>
+
+	<body>
+		<header class="headerContainer">
+			<h1>HEADER - Sample Flexbox Example</h1>
+		</header>
+		<div class="mainContainer">
+			<section class="mainContentItem">
+				<article>
+					<h2>First Article</h2>
+					<p>BridgeLabz is an AWS-recognized incubator lab with a presence spanning cities such as Mumbai, Pune and Bangalore. BridgeLabz conducts regular Boot-Camps for aspiring engineers, which gives young tech talent the opportunity to upskill and make themselves employable</p>
+				</article>
+				<article>
+					<h2>Second Article</h2>
+					<p>Is BridgeLabz Solutions a good company to work for? BridgeLabz Solutions has an overall rating of 4.0 out of 5, based on over 263 reviews left anonymously by employees. 82% of employees would recommend working at BridgeLabz Solutions to a friend and 62% have a positive outlook for the business.</p>
+				</article>
+				<article>
+					<h2>Third Article</h2>
+					<p>How much does BridgeLabz Solutions pay per year? The average BridgeLabz Solutions salary ranges from approximately ₹4,00,000 per year for a Software Developer to ₹6,10,853 per year for a Software Engineer. BridgeLabz Solutions employees rate the overall compensation and benefits package 3.4/5 stars.</p>
+				</article>
+			</section>
+
+			<sideBar class="sideBarItem sideBarLeftItem">
+				<div class="center">
+					<p>Left Side Bar</p>
+				</div>
+			</sideBar>
+
+			<sideBar class="sideBarItem sideBarRightItem">
+				<div class="center">
+					<p>Right Side Bar</p>
+				</div>
+			</sideBar>
+		</div>
+		<footer class="footerContainer">Footer</footer>
+	</body>
+
+</html>
